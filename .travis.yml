@@ -35,7 +35,7 @@ before_install:
       echo "ODM distribution: Skipping download...";
     fi'
 install:
-  - mvn install -Dibm.odm.install.dir=$HOME/.distrib/install -Dmaven.javadoc.skip=true -B -V
+  - mvn install -Dibm.odm.install.dir=$HOME/.distrib/install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
 script:
   - mvn test -B -Dibm.odm.install.dir=$HOME/.distrib/install
 
