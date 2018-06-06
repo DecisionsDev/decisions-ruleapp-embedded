@@ -1,6 +1,6 @@
 # Execute an IBM ODM Decision Service bundled into your JSE application 
 
-[![Build Status](https://travis.ibm.com/benjamin-ratiarisolo/res-jse-memory-res-console.svg?token=by2BAQBLJGxnqLDprkLj&branch=master)](https://travis.ibm.com/benjamin-ratiarisolo/res-jse-memory-res-console)
+[![Build Status](https://travis-ci.org/ODMDev/decisions-ruleapp-embedded.svg?branch=master)](https://travis-ci.org/ODMDev/decisions-ruleapp-embedded)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This Java SE sample illustrates how to execute a decision service _bundled in your JSE application_ with IBM Operational Decision Manager. 
@@ -49,5 +49,5 @@ mvn exec:java -Dexec.mainClass="j2serulesession.Sample" -Dexec.args="/test_deplo
 ## Notice
 © Copyright IBM Corporation 2018.
 
-[![Build Status](https://travis.ibm.com/benjamin-ratiarisolo/res-jse-memory-res-console.svg?token=by2BAQBLJGxnqLDprkLj&branch=master)](https://travis.ibm.com/benjamin-ratiarisolo/res-jse-memory-res-console)
+[![Build Status](https://travis-ci.org/ODMDev/decisions-ruleapp-embedded.svg?branch=master)](https://travis-ci.org/ODMDev/decisions-ruleapp-embedded)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
