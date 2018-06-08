@@ -68,6 +68,20 @@ public class SampleTest {
     }
 
     @Test
+    public void testRulesetNotBundled() throws Exception {
+        try {
+            exit.expectSystemExitWithStatus(2);
+            String argLine = "/foo/bar";
+            Sample.main(argLine.split(" "));
+        } finally {
+            String expectedErrorMessage = "It was not possible to retrieve the information about the ruleset /foo/bar.";
+            assertTrue("SysErr does not contain the error message '" + expectedErrorMessage + "'",
+                    systemErrRule.getLog().contains(expectedErrorMessage));
+            systemErrRule.clearLog();
+        }
+    }
+
+    @Test
     public void testNoRuleAppArchiveArgument() throws Exception {
         String argLine = "/test_deployment/loan_validation_with_score_and_grade";
         Sample.main(argLine.split(" "));
