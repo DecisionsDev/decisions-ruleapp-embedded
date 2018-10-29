@@ -34,13 +34,13 @@ To build and run this sample you'll need to set the `ibm.odm.install.dir` maven 
 ## Building
 To build the source code, type the maven command:
 ```
-mvn clean install -Dibm.odm.install.dir=<ODM_INSTALL_DIR>"
+mvn clean install -Dibm.odm.install.dir="<ODM_INSTALL_DIR>"
 ```
 
 ## Running
 To run the sample, type the following maven command:
 ```
-mvn exec:java -Dexec.mainClass="j2serulesession.Sample" -Dexec.args="/test_deployment/loan_validation_with_score_and_grade" -Dexec.classpathScope="test" -Dibm.odm.install.dir=<ODM_INSTALL_DIR>"
+mvn exec:java -Dexec.mainClass="j2serulesession.Sample" -Dexec.args="/test_deployment/loan_validation_with_score_and_grade" -Dexec.classpathScope="test" -Dibm.odm.install.dir="<ODM_INSTALL_DIR>"
 ```
 
 ## License
